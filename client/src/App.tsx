@@ -1,8 +1,9 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import * as React from 'react';
 import './App.css';
 
-class App extends Component {
+import logo from './logo.svg';
+
+class App extends React.Component {
   state = {
     response: '',
     post: '',
@@ -19,7 +20,7 @@ class App extends Component {
     if (response.status !== 200) throw Error(body.message);
     return body;
   };
-  handleSubmit = async e => {
+  handleSubmit = async (e:any) => {
     e.preventDefault();
     const response = await fetch('/api/world', {
       method: 'POST',
@@ -32,7 +33,7 @@ class App extends Component {
     this.setState({ responseToPost: body });
   };
 
-  render() {
+  public render() {
     return (
       <div className="App">
         <header className="App-header">
