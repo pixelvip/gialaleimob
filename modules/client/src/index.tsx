@@ -1,13 +1,25 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import App from './App';
-import './index.css';
 import registerServiceWorker from './registerServiceWorker';
-// import Hello from './components/Hello';
+import { HashRouter, Route, Switch } from 'react-router-dom';
 
-ReactDOM.render(
-  <App />,
-  // <Hello name="TypeScript" enthusiasmLevel={3} />,
-  document.getElementById('root') as HTMLElement
-);
+// Styles
+// Import Font Awesome Icons Set
+import 'font-awesome/css/font-awesome.min.css';
+// Import Main styles for this application
+import './scss/style.scss'
+// Temp fix for reactstrap
+import './scss/core/_dropdown-menu-right.scss'
+
+// Containers
+import Full from './containers/Full/'
+
+ReactDOM.render((
+  <HashRouter>
+    <Switch>
+      <Route path="/" name="Home" component={Full}/>
+    </Switch>
+  </HashRouter>
+), document.getElementById('root'));
+
 registerServiceWorker();
