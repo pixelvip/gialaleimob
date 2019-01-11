@@ -1,0 +1,39 @@
+.headerContent {
+
+}
+
+.headerLeft {
+    float: left;
+    width: 200px;
+}
+
+img {
+    width:150px;
+    height:55px;
+}
+
+.toggleIcon {
+    float: right;
+    height: 55px;
+    width: 50px;
+
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerMiddle {
+    float: left;
+    height: 55px;
+    display:flex;
+    align-items: center;
+}
+
+.nav-link {
+    color: #73818f;
+    font-size: 14px;
+}
+
+.nav-link:hover {
+    color: #2f353a;
+}

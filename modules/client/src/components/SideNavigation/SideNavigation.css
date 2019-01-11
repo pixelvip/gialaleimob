@@ -1,0 +1,29 @@
+.sideNavigationContent a {
+    width:100%;
+    height:45px;
+
+    font-size: 14px;
+    color: white;
+
+    display:flex;
+    align-items: center;
+}
+
+.sideNavigationContent a:hover {
+    color: white;
+    background-color: #20a8d8;
+    text-decoration: none;
+}
+
+.sideNavigationContent .navIcon {
+    width: 1rem;
+    margin: 0 .75rem 0 1rem;
+    text-align: center;
+    color: #73818f;
+}
+
+.sideNavigationContent .navBadge {
+    float: right;
+    background-color: #63c2de;
+    color: #2f353a;
+}

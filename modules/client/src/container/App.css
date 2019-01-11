@@ -1,0 +1,60 @@
+.app {
+
+}
+
+.header {
+    position:fixed;
+    height: 55px;
+    width: 100%;
+    z-index: 2;
+    background: white;
+    
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    border-color: #c8ced3;
+}
+
+.body {
+
+}
+
+.left {
+    overflow: auto;
+    position:fixed;
+    top: 55px;
+    width: 200px;
+    z-index: 2;
+    height: calc(100vh - 55px);
+
+    background-color: #2f353a;
+}
+
+.middle {
+    position: relative;
+    top: 55px;
+    display: block;
+}
+
+.middleLeftSpace {
+    left: 200px;
+}
+
+.middleRightSpace {
+    margin-right: 450px;
+}
+
+.middleHalfRightSpace {
+    margin-right: 200px;
+}
+
+.right {
+    overflow: auto;
+    position:fixed;
+    top: 55px;
+    right: 0px;
+    width: 250px;
+    z-index: 2;
+    height: calc(100vh - 55px);
+    
+    background-color: #e2e2e2;
+}

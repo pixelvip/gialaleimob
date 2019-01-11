@@ -1,13 +1,17 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import App from './App';
-import './index.css';
 import registerServiceWorker from './registerServiceWorker';
-// import Hello from './components/Hello';
+import App from './container/App';
+
+// Stlyes
+// Import Font Awesome Icons Set
+import 'font-awesome/css/font-awesome.min.css';
+
+// Bootstrap
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(
-  <App />,
-  // <Hello name="TypeScript" enthusiasmLevel={3} />,
-  document.getElementById('root') as HTMLElement
+    <App />,
+    document.getElementById('root') as HTMLElement
 );
 registerServiceWorker();
